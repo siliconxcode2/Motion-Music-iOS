@@ -17,6 +17,13 @@ Likely design: a `PlaybackEngine` that owns two `AVPlayer` instances (A/B) for c
 - AVFoundation does not play WebM. Prefer AAC in MP4 (`.m4a`) for audio and HLS for the iOS client.
 - Best audio is itag 141 (AAC 256 kbps), which YouTube serves only to Premium accounts. Without Premium the best AAC is itag 140 (128 kbps).
 
+## Free and Premium accounts (D26)
+
+- At sign-in, read the account's Premium status from InnerTube and store it.
+- Stream selection asks "best format this account can get", so the same code serves both.
+- Downloads record the bitrate they were saved at. If a free user later gets Premium, the app can offer to re-download at higher quality.
+- Our client plays streams directly, so the official app's free-tier limits on background play don't apply here. Some regional or catalogue limits might still show up in InnerTube responses; handle those as playback errors with a clear message.
+
 ## Live Activity
 
 Needs a Widget extension using ActivityKit. Now Playing state is pushed to it locally (no push server, which free signing couldn't use anyway).

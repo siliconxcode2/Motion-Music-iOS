@@ -35,13 +35,24 @@ Planning runs as about 8 rounds of 6 questions. Before each round the planner re
 | 2.5 | Video? | Yes to all: videos, Song/Video toggle, PiP |
 | 2.6 | Extras? | Live Activity / Dynamic Island only |
 
-## Round 3: UI, look and account
+## Round 3: UI, look and account (answered)
+
+| # | Question | Answer |
+|---|---|---|
+| 3.1 | Tab bar? | Home / Explore / Library / Search, agreed |
+| 3.2 | Now Playing? | Agreed to proposal |
+| 3.3 | Theme? | Follow system; accent from artwork |
+| 3.4 | iOS 27 artist/album pages? | Yes |
+| 3.5 | Name and icon? | "Motion Music" is final; icon ready |
+| 3.6 | Premium? | No. Support both free and Premium |
+
+## Round 4: architecture and code
 
 Asked 2026-11-20. Answers pending.
 
-1. Tab bar layout?
-2. Now Playing screen style and what it holds?
-3. Theme: light/dark, accent colour?
-4. Artist and album pages in the iOS 27 style?
-5. App name and icon?
-6. Do you have YouTube Music Premium?
+1. Project generator: XcodeGen or Tuist?
+2. Local database: GRDB or SwiftData?
+3. Code layout: app target plus local Swift packages?
+4. License (affects porting from GPL projects)?
+5. Third-party package policy?
+6. Remote config file for quick fixes when YouTube changes things?

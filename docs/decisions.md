@@ -24,3 +24,9 @@ Each entry records what was decided and why. Newest at the bottom.
 | D18 | 2026-11-20 | Audio: quality setting (default Highest), gapless, crossfade, equalizer, normalization | Owner chose all audio options |
 | D19 | 2026-11-20 | Music video playback with Song/Video toggle and Picture in Picture | Owner chose all video options |
 | D20 | 2026-11-20 | Only extra for now: Live Activity / Dynamic Island | Keeps free Apple ID app ID use low |
+| D21 | 2026-11-20 | Tabs: Home / Explore / Library / Search, mini player above the tab bar | Apple Music layout mapped to YouTube Music sections |
+| D22 | 2026-11-20 | Now Playing: Apple Music style sheet, artwork-tinted animated background, lyrics and queue views, Song/Video toggle, landscape | Owner agreed to the proposal |
+| D23 | 2026-11-20 | Theme follows system light/dark; accent colour comes from the current artwork | Owner's choice |
+| D24 | 2026-11-20 | Artist and album pages in the iOS 27 Apple Music style | Owner's choice |
+| D25 | 2026-11-20 | Name is "Motion Music"; owner supplies the icon | Final |
+| D26 | 2026-11-20 | Support both free and Premium YouTube Music accounts. Detect Premium at sign-in and pick the best stream the account can get (256 kbps AAC on Premium, 128 kbps AAC on free) | Owner has no Premium; other users might |
