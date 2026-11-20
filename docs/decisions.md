@@ -18,3 +18,9 @@ Each entry records what was decided and why. Newest at the bottom.
 | D12 | 2026-11-20 | CI simulator screenshots and snapshot tests are the way to review UI before installing | No Mac or simulator on Windows |
 | D13 | 2026-11-20 | Stream extraction fully native Swift. Port and translate every non-Swift piece we rely on (yt-dlp logic, other-language clients) into Swift. YouTubeKit may be used or studied | One language, no embedded Python, no server |
 | D14 | 2026-11-20 | Google sign-in: in-app web login that captures session cookies; TV device-code OAuth as fallback | Web login gives full access; device code is restricted but useful as backup |
+| D15 | 2026-11-20 | Phase 1 scope: sign-in, Home, search, playback with queue, background and lock screen controls, Library, Now Playing and mini player | Smallest build that replaces the official app for daily use |
+| D16 | 2026-11-20 | Offline downloads, always best audio available | Owner wants offline listening at top quality |
+| D17 | 2026-11-20 | Apple Music style word-by-word lyrics, falling back to line-synced, then plain | Look of Apple Music without losing songs that only have plain lyrics |
+| D18 | 2026-11-20 | Audio: quality setting (default Highest), gapless, crossfade, equalizer, normalization | Owner chose all audio options |
+| D19 | 2026-11-20 | Music video playback with Song/Video toggle and Picture in Picture | Owner chose all video options |
+| D20 | 2026-11-20 | Only extra for now: Live Activity / Dynamic Island | Keeps free Apple ID app ID use low |

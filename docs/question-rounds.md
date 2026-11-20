@@ -24,13 +24,24 @@ Planning runs as about 8 rounds of 6 questions. Before each round the planner re
 | 1.5 | Stream extraction approach? | Native Swift, and port/translate everything written in other languages to Swift |
 | 1.6 | Google sign-in? | In-app web login (cookies), device-code OAuth as fallback |
 
-## Round 2: features and phases
+## Round 2: features and phases (answered)
+
+| # | Question | Answer |
+|---|---|---|
+| 2.1 | Phase 1 scope? | Agreed to the proposed list (D15) |
+| 2.2 | Offline downloads? | Yes, best audio available |
+| 2.3 | Lyrics? | Apple Music style word-by-word, with fallbacks |
+| 2.4 | Audio options? | Quality (default Highest) and all of gapless, crossfade, EQ, normalization |
+| 2.5 | Video? | Yes to all: videos, Song/Video toggle, PiP |
+| 2.6 | Extras? | Live Activity / Dynamic Island only |
+
+## Round 3: UI, look and account
 
 Asked 2026-11-20. Answers pending.
 
-1. What goes in phase 1 (the first build you install)?
-2. Offline downloads: wanted, which phase, what quality?
-3. Lyrics: plain, line-synced or word-by-word, and which sources?
-4. Audio: quality settings, gapless, crossfade, equalizer?
-5. Video: play music videos, song/video toggle, Picture in Picture?
-6. Extras: which of CarPlay, widgets, Live Activity, Shortcuts/Siri, AirPlay, sleep timer, scrobbling, segment skipping?
+1. Tab bar layout?
+2. Now Playing screen style and what it holds?
+3. Theme: light/dark, accent colour?
+4. Artist and album pages in the iOS 27 style?
+5. App name and icon?
+6. Do you have YouTube Music Premium?
