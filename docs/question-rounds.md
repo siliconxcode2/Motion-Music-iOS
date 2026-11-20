@@ -13,13 +13,24 @@ Planning runs as about 8 rounds of 6 questions. Before each round the planner re
 | 0.5 | Look and feel? | Apple Music style, native SwiftUI |
 | 0.6 | Experience / tools? | Building with Claude Code, on a Windows PC, relying on GitHub CI/CD for all macOS steps |
 
-## Round 1: build setup, sign-in and extraction
+## Round 1: build setup, sign-in and extraction (answered)
+
+| # | Question | Answer |
+|---|---|---|
+| 1.1 | Repo public or private? | Public, so others can try it |
+| 1.2 | Apple ID type and sideload tool? | Free Apple ID; tool left to planner (chose iloader + SideStore, D10) |
+| 1.3 | iPhone / iOS version? | iOS 27 on device; agreed to iOS 17+ minimum |
+| 1.4 | CI screenshots and snapshot tests enough? | Yes |
+| 1.5 | Stream extraction approach? | Native Swift, and port/translate everything written in other languages to Swift |
+| 1.6 | Google sign-in? | In-app web login (cookies), device-code OAuth as fallback |
+
+## Round 2: features and phases
 
 Asked 2026-11-20. Answers pending.
 
-1. Is the GitHub repo public or private?
-2. Free Apple ID or paid Apple Developer account? Which sideload tool?
-3. Which iPhone model and iOS version will you run it on?
-4. Are CI simulator screenshots and snapshot tests enough to check the UI before installing?
-5. Stream extraction: native Swift, embedded yt-dlp, or a personal server?
-6. Google sign-in: in-app web login (cookies) or TV device-code flow?
+1. What goes in phase 1 (the first build you install)?
+2. Offline downloads: wanted, which phase, what quality?
+3. Lyrics: plain, line-synced or word-by-word, and which sources?
+4. Audio: quality settings, gapless, crossfade, equalizer?
+5. Video: play music videos, song/video toggle, Picture in Picture?
+6. Extras: which of CarPlay, widgets, Live Activity, Shortcuts/Siri, AirPlay, sleep timer, scrobbling, segment skipping?

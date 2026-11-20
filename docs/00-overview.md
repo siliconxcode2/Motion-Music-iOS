@@ -6,7 +6,7 @@ Motion Music is a native iOS client for YouTube Music. It signs in with the owne
 
 ## Who it is for
 
-One person: the owner. The app is sideloaded onto their own iPhone. There is no App Store release, no other users, no analytics and no backend run for other people. This keeps legal and review concerns out of the design, but the app still has to survive YouTube changing its private API, so the code must make that easy to fix.
+Mainly the owner, who sideloads it onto their own iPhone. The repo is public so anyone else can build or install it too, each with their own Google account. There is no App Store release, no analytics and no backend server. The app still has to survive YouTube changing its private API, so the code must make that easy to fix.
 
 ## Goals
 
@@ -20,11 +20,11 @@ One person: the owner. The app is sideloaded onto their own iPhone. There is no 
 
 - App Store distribution.
 - Android, macOS or web versions.
-- Multi-user support.
+- Multiple accounts on one install (may revisit).
 
 ## Data source
 
-YouTube Music's unofficial internal API, InnerTube (the same JSON API the official apps and website use). yt-dlp is the reference for stream extraction and cipher handling. How much of yt-dlp runs in the app versus being ported to Swift is an open question; see [open-questions.md](open-questions.md).
+YouTube Music's unofficial internal API, InnerTube (the same JSON API the official apps and website use). Stream extraction is written in Swift, ported from yt-dlp and other open-source clients (D13).
 
 ## Key constraint
 
