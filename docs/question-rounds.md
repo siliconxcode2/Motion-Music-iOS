@@ -46,13 +46,24 @@ Planning runs as about 8 rounds of 6 questions. Before each round the planner re
 | 3.5 | Name and icon? | "Motion Music" is final; icon ready |
 | 3.6 | Premium? | No. Support both free and Premium |
 
-## Round 4: architecture and code
+## Round 4: architecture and code (answered)
 
-Asked 2026-11-20. Answers pending.
+| # | Question | Answer |
+|---|---|---|
+| 4.1 | XcodeGen or Tuist? | Tuist |
+| 4.2 | GRDB or SwiftData? | GRDB |
+| 4.3 | Code layout? | Planner's choice, keeping Claude Code on Windows in mind (D29) |
+| 4.4 | License? | GPL-3.0 |
+| 4.5 | Third-party packages? | Allowed |
+| 4.6 | Remote config? | Yes |
 
-1. Project generator: XcodeGen or Tuist?
-2. Local database: GRDB or SwiftData?
-3. Code layout: app target plus local Swift packages?
-4. License (affects porting from GPL projects)?
-5. Third-party package policy?
-6. Remote config file for quick fixes when YouTube changes things?
+## Round 5: extraction, sign-in and syncing
+
+Asked 2026-11-21. Answers pending.
+
+1. Let the app pick and switch InnerTube clients automatically?
+2. In-app debug log you can export when something breaks?
+3. Guest mode (browse and play without signing in)?
+4. Write actions back to YouTube Music (likes, playlists, play history)?
+5. Cache streamed songs on the device? Size limit?
+6. Content language and region?

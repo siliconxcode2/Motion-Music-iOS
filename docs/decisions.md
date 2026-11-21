@@ -30,3 +30,9 @@ Each entry records what was decided and why. Newest at the bottom.
 | D24 | 2026-11-20 | Artist and album pages in the iOS 27 Apple Music style | Owner's choice |
 | D25 | 2026-11-20 | Name is "Motion Music"; owner supplies the icon | Final |
 | D26 | 2026-11-20 | Support both free and Premium YouTube Music accounts. Detect Premium at sign-in and pick the best stream the account can get (256 kbps AAC on Premium, 128 kbps AAC on free) | Owner has no Premium; other users might |
+| D27 | 2026-11-21 | Tuist generates the Xcode project, in CI only. Tuist version pinned in the repo | Owner's choice; Swift manifests are type-checked |
+| D28 | 2026-11-21 | GRDB (SQLite) for local storage | Mature, predictable, testable |
+| D29 | 2026-11-21 | Modular layout: thin app target plus local Swift packages. Core packages use Foundation only, so they build and test on Linux (and Windows) as well as macOS. Apple-only code sits in separate packages behind protocols | Owner uses Claude Code on Windows; fast feedback without waiting on macOS runners |
+| D30 | 2026-11-21 | License GPL-3.0 | Allows porting code from InnerTune, OuterTune, Metrolist (all GPL-3.0) |
+| D31 | 2026-11-21 | Well-known third-party Swift packages allowed (e.g. GRDB, Nuke, swift-snapshot-testing) | Saves time; keep the list short and pinned |
+| D32 | 2026-11-21 | Remote config JSON hosted in this repo, fetched at launch, with a bundled copy as fallback | Fix many YouTube-side breakages by editing one file, no reinstall |

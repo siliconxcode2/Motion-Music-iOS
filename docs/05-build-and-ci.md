@@ -17,9 +17,16 @@ Every plan in this repo must respect this. Any step that says "open Xcode" or "r
 
 ## Pipeline (draft)
 
+Two jobs run on every push:
+
+- **Linux job** (`ubuntu-latest`, fast): `swift build` and `swift test` for the Foundation-only packages (`MMCore`, `InnerTube`, `Extractor` logic, `Lyrics`). Gives feedback in a few minutes.
+- **macOS job** (`xcode-27`): the full app, as below.
+
+macOS job steps:
+
 1. Push to a branch, or open a pull request.
 2. The workflow starts on an `xcode-27` runner.
-3. Generate the Xcode project from its text spec (XcodeGen or Tuist, pending).
+3. Install the pinned Tuist version and run `tuist generate` (D27).
 4. Resolve Swift packages, build, run unit and snapshot tests on the iOS Simulator.
 5. Build an unsigned `.ipa` (`CODE_SIGNING_ALLOWED=NO`, then zip `Payload/MotionMusic.app`).
 6. Upload the `.ipa`, test results and simulator screenshots as workflow artifacts.
@@ -43,7 +50,15 @@ Free Apple ID limits: 3 active sideloaded apps (SideStore counts as one), and ap
 
 ## Project file without Xcode
 
-A hand-edited `.xcodeproj` is fragile when nobody can open Xcode. We generate it in CI from a text spec, with XcodeGen (`project.yml`) or Tuist. The generated project is not committed. This also keeps diffs readable for Claude Code.
+A hand-edited `.xcodeproj` is fragile when nobody can open Xcode. Tuist generates it in CI from Swift manifests (`Project.swift`, `Tuist.swift`). Tuist needs macOS and Xcode, so it never runs on Windows; Claude Code only edits the manifests. The generated project is not committed.
+
+## Working loop with Claude Code on Windows
+
+1. Claude Code edits code and pushes a branch.
+2. The Linux job reports core test results within minutes; the macOS job follows with the full build, `.ipa` and screenshots.
+3. Claude Code reads results with the `gh` CLI (`gh run watch`, `gh run view --log-failed`, `gh run download` for screenshots and the `.ipa`), so failures can be fixed without leaving the terminal.
+4. Optional: install the Swift for Windows toolchain to run core package tests locally. Networking on Windows Swift is still unreliable, which is why tests use fixtures.
+5. A `CLAUDE.md` at the repo root will spell out this loop and the "no Mac" rule for every future Claude Code session.
 
 ## Seeing the app without a Mac
 

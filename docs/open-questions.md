@@ -4,8 +4,6 @@ Questions that are not settled yet. Move each one to [decisions.md](decisions.md
 
 ## Build and install
 
-- XcodeGen or Tuist to generate the Xcode project in CI?
-- License for the public repo (MIT, GPL-3.0, or none)?
 - Bundle ID (name is final: Motion Music).
 - App icon: owner to add a 1024×1024 PNG at `design/AppIcon-1024.png`.
 
